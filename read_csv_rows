@@ -1,0 +1,17 @@
+import csv
+
+with open("practice.csv", "r") as f:
+    onetwothree = csv.reader(f, delimiter="\t")
+    for i, line in enumerate(onetwothree):
+        print('line[{}] = {}'.format(i, line)) 
+#Output
+line[0] = ['Stream,Content,Possession,POSSESSION']
+line[1] = ['1,abc,yes,clear']
+line[2] = ['2,def,no,none']
+line[3] = ['3,ghi,yes,clear']
+line[4] = ['4,jkl,no,none']
+line[5] = ['5,mno,yes,clear']
+line[6] = ['6,pqr,no,none']
+line[7] = ['7,stu,yes,clear']
+line[8] = ['8,vwx,no,none']
+line[9] = ['9,yz,yes,clear']
